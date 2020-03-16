@@ -1,0 +1,112 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/background_dark_blur">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="  Zero Hunger  "
+            android:textColor="#fff"
+            android:layout_marginTop="60dp"
+            android:textStyle="bold"
+            android:background="@drawable/button_style"
+            android:textSize="38dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signin with Mobile No."
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="19dp"
+            android:maxLength="10"
+
+            android:layout_marginTop="7dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/user1"
+            android:paddingLeft="14dp"
+            android:paddingRight="8dp"
+            android:id="@+id/loginUserName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:textSize="19dp"
+            android:textColor="#fff"
+            android:layout_height="40dp"
+            android:paddingRight="8dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/textbox"
+            android:drawableLeft="@drawable/passwordvector"
+            android:paddingLeft="14dp"
+            android:id="@+id/loginUserPassword"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_marginTop="30dp">
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="130dp"
+                    android:text="Sing in"
+                    android:textColor="#fff"
+                    android:id="@+id/loginSignInButton"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/textboxregister"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textAlignment="center">
+
+            <TableRow>
+                <TextView android:text="Don't have account?"
+                    android:textColor="#fff"
+                    android:layout_marginTop="40dp"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="65dp"
+                    android:gravity="center"/>
+                <TextView android:text="Register!"
+                    android:textStyle="bold"
+                    android:textSize="19dp"
+                    android:textColor="#fff"
+                    android:id="@+id/loginRegisterTextView"
+                    android:layout_marginTop="40dp"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+</LinearLayout>

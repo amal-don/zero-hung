@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "284983778153",
+    "firebase_url": "https://zero-hunger-e3556.firebaseio.com",
+    "project_id": "zero-hunger-e3556",
+    "storage_bucket": "zero-hunger-e3556.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284983778153:android:748d14f2c3f4d0b1a37bf8",
+        "android_client_info": {
+          "package_name": "com.example.zerohunger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284983778153-bdunidps3f44tlsd75mofm1s8mdmfetl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zerohunger",
+            "certificate_hash": "466010595e4600d076b3de216f2147611ff3ab71"
+          }
+        },
+        {
+          "client_id": "284983778153-i8qsoj8osdvj393ks0a2va9q7nbjn1cf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBronj2jGMqkuWeiIbQ5L65vLT8C80DSI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284983778153-i8qsoj8osdvj393ks0a2va9q7nbjn1cf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
