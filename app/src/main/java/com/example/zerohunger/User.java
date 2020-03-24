@@ -3,15 +3,18 @@ package com.example.zerohunger;
 public class User {
 
     String user_name,user_email,user_mobile,user_password;
+    Boolean status;
 
-    public User() {
-    }
-
-    public User(String user_name, String user_email, String user_mobile, String user_password) {
+    public User(String user_name, String user_email, String user_mobile, String user_password, Boolean status) {
         this.user_name = user_name;
         this.user_email = user_email;
         this.user_mobile = user_mobile;
         this.user_password = user_password;
+        this.status = status;
+    }
+
+    public User() {
+        status=false;
     }
 
     public String getUser_name() {
@@ -44,5 +47,13 @@ public class User {
 
     public void setUser_password(String user_password) {
         this.user_password = user_password;
+    }
+
+    public Boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 }
