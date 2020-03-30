@@ -33,6 +33,7 @@ public class user_login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
+        this.setTitle("Login");
         login=(Button)findViewById(R.id.loginSignInButton);
         userName=(EditText)findViewById(R.id.loginUserName);
         password=(EditText)findViewById(R.id.loginUserPassword);
@@ -70,6 +71,9 @@ public class user_login extends AppCompatActivity {
                             for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                                 user = snapshot.getValue(User.class);
                                 if (spasswod.equals(user.user_password)) {
+                                    SharedPreferences.Editor editor=getSharedPreferences("userLogin",MODE_PRIVATE).edit();
+                                    editor.putString("userId",suserName);
+                                    editor.commit();
                                     Intent intent=new Intent(getApplicationContext(),MainActivity.class);
                                     startActivity(intent);
 

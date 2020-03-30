@@ -1,0 +1,166 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/donate_pic"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="10dp"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#03A9F4"
+                android:layout_marginBottom="30dp"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:textColorHint="@color/darkblue"
+                    android:id="@+id/donor_name"
+                    android:gravity="bottom"
+                    android:paddingLeft="5dp"
+                    android:hint="NAME"
+                    android:layout_height="50dp"
+
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/donate_textbox"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/darkblue"
+                    android:id="@+id/donor_number"
+                    android:paddingLeft="5dp"
+                    android:hint="NUMBER"
+                    android:inputType="number"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/donate_textbox"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Select food Quandity"
+                    android:textColor="#FF5722"
+                    android:layout_marginBottom="20dp"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/food_quandity"
+                    android:spinnerMode="dropdown"
+                    android:background="@drawable/donate_textbox"
+                    android:layout_marginBottom="30dp"
+
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColorHint="@color/darkblue"
+                    android:id="@+id/donor_address"
+                    android:paddingLeft="5dp"
+                    android:hint="ADDRESS"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/donate_textbox"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#03A9F4"
+                    android:layout_marginBottom="30dp"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:background="@drawable/donate_textbox"
+                    android:layout_marginBottom="20dp"
+                    >
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:weightSum="2"
+                        android:id="@+id/food_rad_group"
+                        android:layout_weight="2">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/drop_dood"
+                            android:text="Drop Food My Self"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:textSize="16sp"
+                            android:textColor="#808080"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Schedule_pickup"
+                            android:text="Schedule Pickup"
+                            android:layout_weight="1"
+                            android:textSize="16sp"
+                            android:textColor="#808080"
+                            />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fcfcfc"
+                    android:layout_gravity="center"
+                    android:id="@+id/donor_submit"
+                    android:background="@drawable/donor_button"
+                    android:layout_marginBottom="20dp"
+                    android:text="SUBMIT DETAILS"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fcfcfc"
+                    android:layout_gravity="center"
+                    android:id="@+id/donor_location"
+                    android:background="@drawable/donor_button"
+                    android:layout_marginBottom="10dp"
+                    android:text="LOCATION"
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

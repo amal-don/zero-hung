@@ -17,19 +17,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New user Register"
-
-            android:gravity="center"
-            android:textColor="#fff"
-            android:textSize="20dp"
             android:textStyle="bold"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:outlineSpotShadowColor="#2196F3"
             android:text="Enter your Details"
             android:textSize="25dp"
+            android:textColor="@color/colorPrimaryDark"
             android:gravity="center"
             />
         <LinearLayout
@@ -53,6 +45,8 @@
                 android:paddingLeft="20dp"
                 android:hint="Enter Name"
                 android:textSize="20dp"
+                android:inputType="textPersonName"
+
                 android:layout_margin="20dp"
                 android:layout_width="match_parent"
 
@@ -62,6 +56,8 @@
                 android:paddingLeft="20dp"
 
                 android:background="@drawable/donate_textbox"
+                android:inputType="textPersonName"
+
                 android:hint="Enter Email"
                 android:layout_margin="20dp"
                 android:layout_width="match_parent"
@@ -69,6 +65,8 @@
             <EditText
                 android:id="@+id/phone"
                 android:paddingLeft="20dp"
+                android:inputType="number"
+
 
                 android:background="@drawable/donate_textbox"
                 android:hint="Enter Phone No."
@@ -78,7 +76,7 @@
             <EditText
                 android:id="@+id/pass"
                 android:paddingLeft="20dp"
-
+                android:inputType="textPassword"
                 android:background="@drawable/donate_textbox"
                 android:hint="Enter Password"
                 android:layout_margin="20dp"
@@ -87,6 +85,8 @@
             <EditText
                 android:id="@+id/confirm"
                 android:paddingLeft="20dp"
+                android:inputType="textPassword"
+
 
                 android:background="@drawable/donate_textbox"
                 android:hint="Confirm Password"

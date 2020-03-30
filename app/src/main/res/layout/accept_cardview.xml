@@ -1,0 +1,119 @@
+
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:background="#004780"
+    android:layout_marginTop="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#BBB6B6"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="50dp">
+
+        <LinearLayout android:layout_height="330dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+            <LinearLayout
+                android:layout_width="183dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/textbox_cardview"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="center">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="user Name"
+                            android:id="@+id/userName"
+                            android:maxWidth="180dp"
+                            android:textColor="#fff"
+                            android:textSize="19dp"
+                            android:layout_margin="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="email"
+                            android:maxWidth="180dp"
+                            android:id="@+id/emailcard"
+                            android:textColor="#fff"
+                            android:textSize="19dp"
+                            android:layout_margin="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="mobile number"
+                            android:id="@+id/number"
+                            android:maxWidth="180dp"
+                            android:textColor="#fff"
+                            android:textSize="19dp"
+                            android:layout_margin="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:text="password"
+                            android:textColor="#fff"
+                            android:maxWidth="180dp"
+                            android:id="@+id/password"
+                            android:textSize="19dp"
+                            android:layout_margin="10dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+                            <Button
+                                android:layout_width="100dp"
+                                android:layout_marginRight="7dp"
+                                android:layout_height="40dp"
+                                android:text="view"
+                                android:textSize="19dp"
+                                android:textColor="#fff"
+                                android:background="@drawable/textboxregister"
+                                android:textStyle="bold"
+                                android:id="@+id/viewOwnerDetails"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

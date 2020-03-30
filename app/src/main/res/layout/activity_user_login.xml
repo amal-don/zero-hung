@@ -38,6 +38,7 @@
             android:textColor="#fff"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:inputType="number"
             android:textSize="19dp"
             android:maxLength="10"
 

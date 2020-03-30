@@ -3,6 +3,7 @@ package com.example.zerohunger;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.view.View;
@@ -24,6 +25,8 @@ public class user_register extends AppCompatActivity {
     Button register;
     DatabaseReference reference;
     User user;
+    Toast backtoast;
+    long backpress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,9 +93,10 @@ public class user_register extends AppCompatActivity {
                               user.setUser_mobile(sphone);
                               user.setUser_name(sname);
                               user.setUser_password(spassword);
-                              reference.push().setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                              reference.child(sphone).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                   @Override
                                   public void onSuccess(Void aVoid) {
+
                                       Toast.makeText(getApplicationContext(),"succefully registered",Toast.LENGTH_SHORT).show();
 
                                   }
@@ -119,6 +123,23 @@ public class user_register extends AppCompatActivity {
     }
 
 
+    public void onBackPressed()
+{
+    if (backpress+2000>System.currentTimeMillis())
+    {
+        backtoast.cancel();
+        Intent intent=new Intent(getApplicationContext(),user_login.class);
+        startActivity(intent);
+    }
+    else
+    {
+        backtoast=Toast.makeText(getApplicationContext(),"press again to exit",Toast.LENGTH_SHORT);
+        backtoast.show();
+    }
+    backpress=System.currentTimeMillis();
+}
+
 
 
 }
+
